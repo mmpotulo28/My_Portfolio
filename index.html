@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html data-bs-theme="light" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Manelisi Mpotulo | Portfolio</title>
+    <link rel="canonical" href="https://mmpotulo.bss.design/">
+    <meta property="og:url" content="https://mmpotulo.bss.design/">
+    <meta name="description" content="View this mazing portfolio of Manelisi Mpotulo,
+an Engineering student at CPUT.">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="View this mazing portfolio of Manelisi Mpotulo,an Engineering student at CPUT.">
+    <script type="application/ld+json">
+        {
+            "@context": "http://schema.org",
+            "@type": "WebSite",
+            "name": "Manelisi Mpotulo | Portfolio",
+            "url": "https://mmpotulo.bss.design/"
+        }
+    </script>
+    <script>
+        (function() {
+
+            // JavaScript snippet handling Dark/Light mode switching
+
+            const getStoredTheme = () => localStorage.getItem('theme');
+            const setStoredTheme = theme => localStorage.setItem('theme', theme);
+            const forcedTheme = document.documentElement.getAttribute('data-bss-forced-theme');
+
+            const getPreferredTheme = () => {
+
+                if (forcedTheme) return forcedTheme;
+
+                const storedTheme = getStoredTheme();
+                if (storedTheme) {
+                    return storedTheme;
+                }
+
+                const pageTheme = document.documentElement.getAttribute('data-bs-theme');
+
+                if (pageTheme) {
+                    return pageTheme;
+                }
+
+                return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+            }
+
+            const setTheme = theme => {
+                if (theme === 'auto' && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+                    document.documentElement.setAttribute('data-bs-theme', 'dark');
+                } else {
+                    document.documentElement.setAttribute('data-bs-theme', theme);
+                }
+            }
+
+            setTheme(getPreferredTheme());
+
+            const showActiveTheme = (theme, focus = false) => {
+                const themeSwitchers = [].slice.call(document.querySelectorAll('.theme-switcher'));
+
+                if (!themeSwitchers.length) return;
+
+                document.querySelectorAll('[data-bs-theme-value]').forEach(element => {
+                    element.classList.remove('active');
+                    element.setAttribute('aria-pressed', 'false');
+                });
+
+                for (const themeSwitcher of themeSwitchers) {
+
+                    const btnToActivate = themeSwitcher.querySelector('[data-bs-theme-value="' + theme + '"]');
+
+                    if (btnToActivate) {
+                        btnToActivate.classList.add('active');
+                        btnToActivate.setAttribute('aria-pressed', 'true');
+                    }
+                }
+            }
+
+            window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', () => {
+                const storedTheme = getStoredTheme();
+                if (storedTheme !== 'light' && storedTheme !== 'dark') {
+                    setTheme(getPreferredTheme());
+                }
+            });
+
+            window.addEventListener('DOMContentLoaded', () => {
+                showActiveTheme(getPreferredTheme());
+
+                document.querySelectorAll('[data-bs-theme-value]')
+                    .forEach(toggle => {
+                        toggle.addEventListener('click', (e) => {
+                            e.preventDefault();
+                            const theme = toggle.getAttribute('data-bs-theme-value');
+                            setStoredTheme(theme);
+                            setTheme(theme);
+                            showActiveTheme(theme);
+                        })
+                    })
+            });
+        })();
+    </script>
+    <link rel="icon" type="image/png" sizes="512x512" href="/assets/img/clipboard-image-2.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="/assets/img/clipboard-image-2.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="/assets/img/clipboard-image-2.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="/assets/img/clipboard-image-2.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="/assets/img/clipboard-image-2.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abhaya+Libre&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Acme&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Akaya+Kanadaka&amp;display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="/assets/css/Banner.css">
+    <link rel="stylesheet" href="/assets/css/grid-images.css">
+    <link rel="stylesheet" href="/assets/css/navbar.css">
+    <link rel="stylesheet" href="/assets/css/styles.css">
+</head>
+
+<body style="width: 100%;height: 100%;">
+    <nav class="navbar navbar-expand-md bg-dark py-3" data-bs-theme="dark" style="background: var(--bs-body-color);">
+        <div class="container">
+            <div class="theme-switcher dropdown" style="width: 46.7px;"><a class="dropdown-toggle" aria-expanded="false" data-bs-toggle="dropdown" href="#" style="transform: scale(1);width: 20%;"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-sun-fill mb-1" style="width: 30px;height: 24px;margin-right: 0px;">
+                        <path d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"></path>
+                    </svg></a>
+                <div class="dropdown-menu"><a class="dropdown-item d-flex align-items-center" href="#" data-bs-theme-value="light"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-sun-fill opacity-50 me-2">
+                            <path d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"></path>
+                        </svg>Light</a><a class="dropdown-item d-flex align-items-center" href="#" data-bs-theme-value="dark"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-moon-stars-fill opacity-50 me-2">
+                            <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"></path>
+                            <path d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z"></path>
+                        </svg>Dark</a><a class="dropdown-item d-flex align-items-center" href="#" data-bs-theme-value="auto"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-circle-half opacity-50 me-2">
+                            <path d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z"></path>
+                        </svg>Auto</a></div>
+            </div><a class="navbar-brand d-flex align-items-center" href="#"><span><strong>Manelisi Mpotulo</strong></span></a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-5"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navcol-5" style="font-weight: bold;text-align: left;background: transparent;">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="/index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/index.html" data-bs-target="work">My work</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/contact.html">Contacts</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container" style="padding-bottom: 0;width: 100%;padding-top: 0;">
+        <section class="text-white py-4 py-xl-5" style="width: 100%;">
+            <div class="container" style="padding-right: 0;padding-left: 0;">
+                <div class="border rounded border-0 d-flex flex-column justify-content-center align-items-center" style="background: linear-gradient(rgba(0,123,255,0.2), rgba(0,123,255,0.2)), url(&quot;https://i.ytimg.com/vi/WyeXAxFfR3s/maxresdefault.jpg&quot;) center / contain round;width: 100%;padding-top: 0;padding-right: 0;">
+                    <div class="row" style="width: 100%;height: 100%;">
+                        <div class="col-md-10 col-xl-8 text-center d-flex d-sm-flex d-md-flex justify-content-center align-items-center mx-auto justify-content-md-start align-items-md-center justify-content-xl-center" style="height: auto;">
+                            <div style="background: rgba(0,0,0,0.62);height: auto;width: auto;">
+                                <h1 class="text-uppercase fw-bold mb-3" style="margin-top: 8px;">Welcome</h1>
+                                <p class="mb-4" style="font-family: 'Akaya Kanadaka', serif;font-size: 21px;width: 100%;position: static;overflow: hidden;height: auto;">Whether you’re here to learn more about my projects or just browsing for inspiration, I hope you find something that catches your eye. Feel free to reach out if you have any questions or just want to say hello. Thanks for stopping by!<br><br><br></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="row mb-5" style="border-top: 5px solid var(--bs-secondary-color);margin-top: 6px;padding-top: 10px;background: var(--bs-secondary-bg);">
+            <div class="col-md-8 col-xl-6 text-center mx-auto">
+                <h2><img src="/assets/img/clipboard-image-24.png" style="width: 8%;margin-right: 10px;">About Me</h2>
+                <p class="w-lg-50">Hi there! My name is Manelisi Mpotulo, and I’m a Computer Engineering student at CPUT. I’m also a self-taught web developer, Software Engineer, DJ, and music producer. I’m passionate about creating beautiful and functional websites that are both user-friendly and visually appealing. When I’m not coding or mixing music, you can find me exploring new technologies and learning new skills to improve my craft. I’m always looking for new challenges and opportunities to grow as a developer and artist, so feel free to reach out if you’d like to collaborate or chat!</p>
+            </div>
+        </div>
+        <div class="row mb-5" style="border-top: 5px solid var(--bs-secondary-color);">
+            <div class="col-md-8 col-xl-6 text-center mx-auto">
+                <h2 style="margin-top: 10px;"><img style="margin-right: 12px;width: 10%;" src="/assets/img/clipboard-image-23.png">My Skills</h2>
+            </div>
+        </div>
+        <div class="row gy-4 row-cols-1 row-cols-md-2 row-cols-xl-3" style="margin-right: auto;margin-left: auto;display: flex;">
+            <div class="col">
+                <div class="p-4" style="margin-bottom: 24px;background: var(--bs-secondary-bg);"><span class="badge rounded-pill bg-primary mb-2"></span><span class="badge rounded-pill bg-primary mb-2"></span><span class="badge rounded-pill bg-primary mb-2">Article</span>
+                    <h4>Web-Dev Front End</h4>
+                    <p></p>
+                    <div class="d-flex"><img class="rounded-circle flex-shrink-0 me-3 fit-cover" width="50" height="50" src="/assets/img/clipboard-image-3.png" style="border-radius: 0;">
+                        <div>
+                            <p class="fw-bold mb-0">HTML</p>
+                            <p class="text-muted mb-0">From navbar to the footer! meta data included</p>
+                        </div>
+                    </div>
+                    <div class="d-flex"><img class="rounded-circle flex-shrink-0 me-3 fit-cover" width="50" height="50" src="/assets/img/clipboard-image-4.png" style="border-radius: 0px;border-width: 0px;border-style: none;border-right-style: dotted;transform: scale(1);">
+                        <div>
+                            <p class="fw-bold mb-0">CSS</p>
+                            <p class="text-muted mb-0">Just Look at how this Site is Styled.</p>
+                        </div>
+                    </div>
+                    <div class="d-flex"><img class="rounded-circle flex-shrink-0 me-3 fit-cover" width="50" height="50" src="/assets/img/clipboard-image-5.png" style="transform: scale(0.68);">
+                        <div>
+                            <p class="fw-bold mb-0">JavaScript</p>
+                            <p class="text-muted mb-0">Wide knowledge of JS, including WEBGL, the graphics context</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-4" style="margin-bottom: 24px;background: var(--bs-secondary-bg);"><span class="badge rounded-pill bg-primary mb-2">Article</span>
+                    <h4>Web-Dev Back End</h4>
+                    <p></p>
+                    <div class="d-flex"><img class="rounded-circle flex-shrink-0 me-3 fit-cover" width="50" height="50" src="/assets/img/clipboard-image-6.png">
+                        <div>
+                            <p class="fw-bold mb-0">PHP</p>
+                            <p class="text-muted mb-0">The server scripting language works best in connection with,</p>
+                        </div>
+                    </div>
+                    <div class="d-flex"><img class="rounded-circle flex-shrink-0 me-3 fit-cover" width="50" height="50" src="/assets/img/clipboard-image-7.png">
+                        <div>
+                            <p class="fw-bold mb-0">MySQL</p>
+                            <p class="text-muted mb-0">SQL database system</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="p-4" style="margin-top: 0;margin-bottom: 24px;background: var(--bs-secondary-bg);"><span class="badge rounded-pill bg-primary mb-2"></span><span class="badge rounded-pill bg-primary mb-2"></span><span class="badge rounded-pill bg-primary mb-2">Article</span>
+                    <h4>Software Engineering/Dev</h4>
+                    <p></p>
+                    <div class="d-flex"><img class="rounded-circle flex-shrink-0 me-3 fit-cover" width="50" height="50" src="/assets/img/clipboard-image-9.png">
+                        <div>
+                            <p class="fw-bold mb-0">C</p>
+                            <p class="text-muted mb-0">Pointers, Arrays, Loop, Structures, etc...</p>
+                        </div>
+                    </div>
+                    <div class="d-flex"><img class="rounded-circle flex-shrink-0 me-3 fit-cover" width="50" height="50" src="/assets/img/clipboard-image-8.png">
+                        <div>
+                            <p class="fw-bold mb-0">JAVA</p>
+                            <p class="text-muted mb-0">classes, JAVA's OOP features, and many more</p>
+                        </div>
+                    </div>
+                    <div class="d-flex"><img class="rounded-circle flex-shrink-0 me-3 fit-cover" width="50" height="50" src="/assets/img/clipboard-image-5.png">
+                        <div>
+                            <p class="fw-bold mb-0">JavaScript</p>
+                            <p class="text-muted mb-0">WEBGL, the Computer graphics context</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-4" style="margin-top: 0;background: var(--bs-secondary-bg);"><span class="badge rounded-pill bg-primary mb-2">Article</span>
+                    <h4>Cloud</h4>
+                    <p></p>
+                    <div class="d-flex"><img class="rounded-circle flex-shrink-0 me-3 fit-cover" width="50" height="50" src="/assets/img/clipboard-image-15.png">
+                        <div>
+                            <p class="fw-bold mb-0" style="font-weight: bold;background: transparent;"><span style="color: rgb(0, 0, 0); background-color: rgba(255, 255, 255, 0.08);">Amazon Web Services (AWS)</span></p>
+                            <p class="text-muted mb-0">Hosting, Storage and database</p>
+                        </div>
+                    </div>
+                    <div class="d-flex"><img class="rounded-circle flex-shrink-0 me-3 fit-cover" width="50" height="50" src="/assets/img/clipboard-image-16.png">
+                        <div>
+                            <p class="fw-bold mb-0">Microsoft Azure</p>
+                            <p class="text-muted mb-0">virtual machines, databases, and analytics.</p>
+                        </div>
+                    </div>
+                    <div class="d-flex"><img class="rounded-circle flex-shrink-0 me-3 fit-cover" width="50" height="50" src="/assets/img/clipboard-image-17.png">
+                        <div>
+                            <p class="fw-bold mb-0">Github</p>
+                            <p class="text-muted mb-0">Git Repo, github pages, codespaces, etc...</p>
+                        </div>
+                    </div>
+                    <div class="d-flex"><img class="rounded-circle flex-shrink-0 me-3 fit-cover" width="50" height="50" src="/assets/img/clipboard-image-18.png">
+                        <div>
+                            <p class="fw-bold mb-0">Google Cloud Platform</p>
+                            <p class="text-muted mb-0">Git Repo, github pages, codespaces, etc...</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="p-4" style="background: var(--bs-secondary-bg);"><span class="badge rounded-pill bg-primary mb-2">Article</span>
+                    <h4>Web Hosting &amp; Managment</h4>
+                    <p></p>
+                    <div class="d-flex"><img class="rounded-circle flex-shrink-0 me-3 fit-cover" width="50" height="50" src="/assets/img/clipboard-image-1.png">
+                        <div>
+                            <p class="fw-bold mb-0">Digital Ocean,&nbsp;Afrihost, and many other</p>
+                        </div>
+                    </div>
+                    <div class="d-flex"><img class="rounded-circle flex-shrink-0 me-3 fit-cover" width="50" height="50" src="/assets/img/clipboard-image-19.png">
+                        <div>
+                            <p class="fw-bold mb-0">Cpanel file manegment &amp; ftp</p>
+                        </div>
+                    </div>
+                    <div class="d-flex"><img class="rounded-circle flex-shrink-0 me-3 fit-cover" width="50" height="50" src="/assets/img/clipboard-image-12.png">
+                        <div>
+                            <p class="fw-bold mb-0">domain registration</p>
+                            <p class="text-muted mb-0" style="padding-right: 0px;margin-right: -10px;">domain registration and whois info update</p>
+                        </div>
+                    </div>
+                    <div class="d-flex"><img class="rounded-circle flex-shrink-0 me-3 fit-cover" width="50" height="50" src="/assets/img/clipboard-image-13.png">
+                        <div>
+                            <p class="fw-bold mb-0">SEO Optimization</p>
+                            <p class="text-muted mb-0" style="padding-right: 0px;margin-right: -10px;">Search Engine Indexing Optimization</p>
+                        </div>
+                    </div>
+                    <div class="d-flex"><img class="rounded-circle flex-shrink-0 me-3 fit-cover" width="50" height="50" src="/assets/img/clipboard-image-20.png">
+                        <div>
+                            <p class="fw-bold mb-0">Cloudflare web Security</p>
+                            <p class="text-muted mb-0">setting up cloudflare firewall</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container py-4 py-xl-5" id="work" style="border-top: 5px solid var(--bs-secondary-color) ;">
+        <div class="row mb-5">
+            <div class="col-md-8 col-xl-6 text-center mx-auto">
+                <h2>My Work</h2>
+                <p class="w-lg-50">Below is a showcase of my work. most of them are not Hosted online, but a git repo link is provided.</p>
+            </div>
+        </div>
+        <div class="row gy-4 row-cols-1 row-cols-md-2 row-cols-xl-3">
+            <div class="col">
+                <div style="border-color: var(--bs-secondary-bg);background: var(--bs-secondary-bg);"><img class="rounded img-fluid d-block w-100 fit-cover" style="height: 200px;" src="/assets/img/clipboard-image-21.png">
+                    <div class="py-4" style="border-color: var(--bs-secondary-color);">
+                        <h4>webgl (JS)&nbsp; Pac-Man</h4>
+                        <p>a version of the classic pacman game, programmed using JavaSript, and webgl.</p><button class="btn btn-primary" data-bss-disabled-mobile="true" data-bss-hover-animate="pulse" type="button" style="margin-right: 10px;margin-left: 10px;"><a href="https://github.com/mmpotulo28/pac_man"><span style="color: rgb(255, 255, 255);">View GitHub repo&nbsp;</span></a></button><button class="btn btn-primary active" data-bss-disabled-mobile="true" data-bss-hover-animate="pulse" type="button"><a href="https://mmpotulo28.github.io/pac_man/"><span style="color: rgb(255, 255, 255);">View Online</span></a></button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div><img class="rounded img-fluid d-block w-100 fit-cover" style="height: 200px;" src="/assets/img/clipboard-image-22.png">
+                    <div class="py-4" style="background: var(--bs-secondary-bg);">
+                        <h4>My Portfolio (this site)</h4>
+                        <p>This website, built using HTML, Bootstarp, CSS and JavaScript.</p><button class="btn btn-primary" type="button" style="margin-left: 10px;"><a href="https://github.com/mmpotulo28/My_Portfolio"><span style="color: rgb(255, 255, 255);">View GitHub repo&nbsp;</span></a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="text-primary"></footer>
+    <footer class="text-center bg-dark" style="background: var(--bs-emphasis-color);">
+        <div class="container text-white py-4 py-lg-5" style="background: var(--bs-body-color);">
+            <ul class="list-inline">
+                <li class="list-inline-item me-4"><a class="link-light" href="#">Copyright | M Mpotulo | 2023</a></li>
+                <li class="list-inline-item me-4"><a class="link-light" href="/contact.html">Contacts</a></li>
+                <li class="list-inline-item"><a class="link-light" href="https://github.com/mmpotulo28">Github</a></li>
+            </ul>
+            <ul class="list-inline">
+                <li class="list-inline-item me-4"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-facebook text-light">
+                        <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"></path>
+                    </svg></li>
+                <li class="list-inline-item me-4"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-linkedin text-light">
+                        <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"></path>
+                    </svg></li>
+                <li class="list-inline-item"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-instagram text-light">
+                        <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"></path>
+                    </svg></li>
+            </ul>
+            <p class="text-muted mb-0">Copyright © 2023 Brand</p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/assets/js/bs-init.js"></script>
+</body>
+
+</html>
